@@ -15,7 +15,7 @@ Example [Demo](https://portfolio-a9733.web.app/)
 ### Running
 
 ```
-npm start
+ng serve
 ```
 
 ## Authors
