@@ -1,0 +1,106 @@
+.ui-terminal-main {
+  height: 25em;
+  overflow: auto;
+  padding: 0.5em;
+  background-color: black;
+  color: greenyellow;
+  border: 1px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.ui-terminal-icon1 {
+  border-radius: 50%;
+  display: inline-block;
+  height: 13px;
+  margin-right: 5px;
+  width: 13px;
+  background-color: rgb(238, 39, 59);
+}
+
+.ui-terminal-icon2 {
+  border-radius: 50%;
+  display: inline-block;
+  height: 13px;
+  margin-right: 5px;
+  width: 13px;
+  background-color: rgb(218, 206, 49);
+}
+
+.ui-terminal-icon3 {
+  border-radius: 50%;
+  display: inline-block;
+  height: 13px;
+  margin-right: 5px;
+  width: 13px;
+  background-color: rgb(9, 226, 20);
+}
+
+.ui-terminal-topbar {
+  padding: 5px 10px 0px;
+  background-color: rgba(42, 43, 48, 0.678);
+  border: 1px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.ui-terminal-content {
+  font-family: Space Mono;
+}
+
+.ui-terminal-content-prompt {
+  font-family: Space Mono;
+}
+
+.ui-terminal-input {
+  border: 0 none;
+  background-color: transparent;
+  color: inherit;
+  padding: 0;
+  margin: 0 0 0 0.125em;
+  width: 75%;
+  outline: none;
+  vertical-align: baseline;
+  font-family: Space Mono;
+}
+
+.ui-terminal-command {
+  margin-left: 0.125em;
+  -moz-margin-start: 0.125em;
+}
+
+.ui-terminal-input::-ms-clear {
+  display: none;
+}
+
+.scroll-custom .ui-scrollpanel-bar {
+  opacity: 1;
+  transition: background-color 0.3s;
+}
+
+.ui-command-list {
+  height: auto;
+  overflow: auto;
+  padding: 0.5em;
+  border: 1px solid black;
+  border-radius: 5px 5px 5px 5px;
+}
+
+.head-page {
+  text-align: center;
+  margin: 0.25em;
+  font-size: 40px;
+  font-family: Neucha;
+}
+
+.ui-command-title {
+  margin: 0.5em 0em 0.5em;
+  text-align: start;
+  font-family: Space Mono;
+}
+
+.ui-command-item {
+  background-color: slategrey;
+  display: inline-block;
+  border-radius: 10px 10px 115px 10px;
+  font-family: Space Mono;
+  font-size: small;
+}

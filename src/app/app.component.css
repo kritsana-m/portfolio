@@ -1,0 +1,15 @@
+
+.content-section {
+    display: block;
+    padding: 30px;
+    overflow: hidden;
+}
+
+.layout-footer {
+    margin-top: 1em;
+    text-align: center;
+    border-top: 2px solid #dcdedf;
+    color: #707070;
+    font-weight: 700;
+    font-family: Space Mono;
+}

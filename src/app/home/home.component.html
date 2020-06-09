@@ -1,0 +1,58 @@
+<div class="p-grid p-justify-center">
+  <div class="p-col-12 p-sm-10 p-lg-9">
+    <div class="head-page">KRITSANA PROFILE</div>
+    <div class="ui-terminal-topbar">
+      <span class="ui-terminal-icon1"></span>
+      <span class="ui-terminal-icon2"></span>
+      <span class="ui-terminal-icon3"></span>
+    </div>
+    <div class="ui-terminal-main" (click)="focus(in)">
+      <p-scrollPanel [style]="{ width: '100%', height: '100%' }" styleClass="scroll-custom" > 
+        <div class="ui-terminal-content">
+          <div>Welcome to my profile!</div>
+          <div *ngFor="let command of commands">
+            <span>{{ sigma }}</span>
+            <span class="ui-terminal-command">{{ command.command }}</span>
+            <div *ngFor="let respones of command.respone">
+              <p>{{ respones.data }}</p>
+            </div>
+          </div>
+        <div>
+          <span class="ui-terminal-content-prompt">{{ sigma }}</span>
+          <input
+            #in
+            type="text"
+            [(ngModel)]="command"
+            class="ui-terminal-input"
+            autocomplete="off"
+            autofocus
+            (keyup.enter)="summit_command()"
+            pKeyFilter="alpha"
+          />
+        </div>
+      </div>
+      </p-scrollPanel>
+    </div>
+  </div>
+</div>
+
+<div class="p-grid p-justify-center">
+  <div class="p-col-12 p-sm-10 p-lg-9">
+    <div class="ui-command-title">
+     >_ Command List
+    </div>
+    <div class="ui-command-list">
+      <div class="p-grid">
+        <ng-container *ngFor="let item of command_list">
+            <div class="p-col-6 p-sm-4 p-lg-3">
+              <div class="ui-command-item"> 
+                <div style="margin: 10px;">
+                  {{item.detail}} ({{item.name}})
+                </div>
+              </div>
+            </div>
+        </ng-container>
+      </div>
+    </div>
+  </div>
+</div>

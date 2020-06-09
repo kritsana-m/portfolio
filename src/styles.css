@@ -1,0 +1,21 @@
+body {
+  background-color: whitesmoke;
+}
+
+@font-face {
+  font-family: "Neucha";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Neucha"),
+    url("assets/font/neucha-v11-latin-regular.woff2") format("woff2"),
+    url("assets/font/neucha-v11-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Space Mono"), local("SpaceMono-Regular"),
+    url("assets/font/space-mono-v5-latin-regular.woff2") format("woff2"),
+    url("assets/font/space-mono-v5-latin-regular.woff") format("woff");
+}
